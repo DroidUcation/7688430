@@ -8,18 +8,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstActivity" />
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".ThirdActivity" />
-        <activity android:name=".ForthActivity" />
-        <activity android:name=".FifthActivity"></activity>
-    </application>
+        <activity android:name=".Activities.FirstActivity" />
+        <activity android:name=".Activities.SecondActivity" />
+        <activity android:name=".Activities.ThirdActivity" />
+        <activity android:name=".Activities.ForthActivity" />
+        <activity android:name=".Activities.FifthActivity" />
+        <provider
+            android:authorities="com.example.goldstein.myapplication"
+            android:name=".Providers.CameraProvider"
+            >
+        </provider>
 
+</application>
 </manifest>

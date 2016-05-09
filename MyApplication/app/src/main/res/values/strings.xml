@@ -5,4 +5,11 @@
     <string name="third_str">While auto-everything exposure and ‘everything on’ AF can be dangerous and limiting, auto ISO actually has its uses for the serious photographer. If the light keeps changing, your camera can calculate and activate a more suitable ISO in a fraction of the time that you can. \nIf you are worried about noise creeping in, restrict the upper limit of auto ISO to 1600, but don’t be too conservative. Better a slightly noisy image than a soft one.</string>
     <string name="forth_str">It’s actually the central AF point which is the most sensitive, so try to use this whenever you can, using AF ‘lock and recompose’ where necessary. \nThat said, a relatively new camera with powerful autofocus features will have sensitive AF points across the viewfinder, so if you are in a hurry, quickly the select AF point that is closest to the part of the subject that must be in focus.</string>
     <string name="fifth_str">If you need to shift to manual focus, make life as easy for yourself as possible. Switch to Live View and you can zoom into the scene so you can check that critical areas are in sharp focus. If you have a compact system camera you may have ‘focus peaking’ too, which reveals which areas of the shot are in focus. Check your manual.</string>
+    <string name="txt_title_str">Your Camera</string>
+    <string name="btn_1_text">Tip 1</string>
+    <string name="btn_2_text">Tip 2</string>
+    <string name="btn_3_text">Tip 3</string>
+    <string name="btn_4_text">Tip 4</string>
+    <string name="btn_5_text">Tip 5</string>
+    <string name="btn2_text">Tip 2</string>
 </resources>
