@@ -20,11 +20,14 @@
         <activity android:name=".Activities.ThirdActivity" />
         <activity android:name=".Activities.ForthActivity" />
         <activity android:name=".Activities.FifthActivity" />
-        <provider
-            android:authorities="com.example.goldstein.myapplication"
-            android:name=".Providers.CameraProvider"
-            >
-        </provider>
 
-</application>
+        <provider
+            android:name=".CameraProvider"
+            android:authorities="com.example.goldstein.myapplication.CameraProvider"
+            android:exported="true"
+            android:grantUriPermissions="true"></provider>
+
+        <activity android:name=".AlarmActivity"></activity>
+    </application>
+
 </manifest>

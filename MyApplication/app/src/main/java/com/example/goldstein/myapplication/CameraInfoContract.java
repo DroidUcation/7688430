@@ -1,4 +1,4 @@
-package com.example.goldstein.myapplication.Contracts;
+package com.example.goldstein.myapplication;
 
 import android.net.Uri;
 import android.provider.BaseColumns;
@@ -8,9 +8,9 @@ import android.provider.BaseColumns;
  */
 public class CameraInfoContract {
 
-    public static final String CONTENT_AUTHORITY = "com.example.goldstein.myapplication.Providers.CameraProvider";
-    public static final String PATH_CAMERA = "camera";
-    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
+    public static final String CONTENT_AUTHORITY = "com.example.goldstein.myapplication.CameraProvider";
+    public static final String PATH_CAMERA = "CameraInfo";
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY +"/"+PATH_CAMERA);
     public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(PATH_CAMERA).build();
 
     public static class CameraInfoEntry implements BaseColumns

@@ -1,15 +1,17 @@
-package com.example.goldstein.myapplication.Providers;
+package com.example.goldstein.myapplication;
 
 import android.content.ContentProvider;
+import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
-import android.os.CancellationSignal;
 import android.support.annotation.Nullable;
 
-import com.example.goldstein.myapplication.Contracts.CameraInfoContract;
-import com.example.goldstein.myapplication.SQLHelpers.SQLHelper;
+import com.example.goldstein.myapplication.CameraInfoContract;
+import com.example.goldstein.myapplication.SQLHelper;
 
 /**
  * Created by Goldstein on 18/04/2016.
@@ -18,6 +20,7 @@ public class CameraProvider extends ContentProvider {
 
     private static final UriMatcher sUriMatcher = buildUriMatcher();
     private SQLHelper sqlHelper;
+    private SQLiteDatabase sqLiteDatabase;
 
     static UriMatcher buildUriMatcher() {
         // I know what you're thinking.  Why create a UriMatcher when you can use regular
@@ -41,20 +44,20 @@ public class CameraProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
         sqlHelper = new SQLHelper(getContext());
+        sqLiteDatabase = sqlHelper.getWritableDatabase();
         return true;
-    }
-
-    @Nullable
-    @Override
-    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder, CancellationSignal cancellationSignal) {
-        return super.query(uri, projection, selection, selectionArgs, sortOrder, cancellationSignal);
     }
 
     @Nullable
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         Cursor retCursor;
-        retCursor = sqlHelper.getReadableDatabase().query(
+        SQLiteQueryBuilder sqLiteQueryBuilder = new SQLiteQueryBuilder();
+        sqLiteQueryBuilder.setTables(CameraInfoContract.CameraInfoEntry.TABLE_NAME);
+        retCursor =sqLiteQueryBuilder.query(sqLiteDatabase, projection, selection, selectionArgs,
+                null, null, null);
+
+       /* retCursor = sqlHelper.getReadableDatabase().query(
                 CameraInfoContract.CameraInfoEntry.TABLE_NAME,
                 projection,
                 selection,
@@ -62,7 +65,7 @@ public class CameraProvider extends ContentProvider {
                 null,
                 null,
                 sortOrder
-        );/*
+        );*//*
         switch (sUriMatcher.match(uri)) {
 
             case 100: {
@@ -88,7 +91,8 @@ public class CameraProvider extends ContentProvider {
     @Nullable
     @Override
     public String getType(Uri uri) {
-        return null;
+       return ContentResolver.CURSOR_DIR_BASE_TYPE + "/" +  CameraInfoContract.CONTENT_AUTHORITY + "/" + CameraInfoContract.CameraInfoEntry.TABLE_NAME;
+
     }
 
     @Nullable

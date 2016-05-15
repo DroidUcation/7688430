@@ -1,16 +1,14 @@
 package com.example.goldstein.myapplication.Activities;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.goldstein.myapplication.Contracts.CameraInfoContract;
+import com.example.goldstein.myapplication.CameraInfoContract;
 import com.example.goldstein.myapplication.R;
-import com.example.goldstein.myapplication.SQLHelpers.SQLHelper;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
 
@@ -32,27 +30,22 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 CameraInfoContract.CameraInfoEntry.COLUMN_TITLE};
 
         Cursor cursor = getContentResolver().query(CameraInfoContract.BASE_CONTENT_URI, projection, null, null, null);
-        int cnt = 1;
-        String title ="empty";
+        int columnTitleIdx = cursor.getColumnIndex(CameraInfoContract.CameraInfoEntry.COLUMN_TITLE);
+        String[] title = new String[5];
+        int  i = 0;
         if(cursor != null) {
-            if (cursor.moveToFirst()) {
-                 title = cursor.getString(1);
-                String content1 = cursor.getString(2);
-                String image1 = cursor.getString(3);
-            }
-            while (cursor.moveToNext()) {
-                 title = cursor.getString(1);
-                String content = cursor.getString(2);
-                String image = cursor.getString(3);
-                cnt++;
-            }
+            cursor.moveToFirst();
+                do {
+                    title[i] = cursor.getString(columnTitleIdx);
+                    i++;
+                }while (cursor.moveToNext());
         }
 
-        btn1.setText(title);
-        /*SQLHelper sqlHelper = new SQLHelper(this);
-        sqlHelper.insertCameraInfo(sqlHelper.getWritableDatabase(), "2 thing", "lalalalal", "image2");
-sqlHelper.getCameraInfo();*/
-       // sqlHelper.onCreate(sqlHelper.getWritableDatabase());
+        btn1.setText(title[0]);
+        btn2.setText(title[1]);
+        btn3.setText(title[2]);
+        btn4.setText(title[3]);
+        btn5.setText(title[4]);
     }
 
     private void setButtons()
