@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xhdpi"
+    format="7"
+    timestamp="248197783582720"
+    token="-6356488105396825287" >
+
+    <task
+        name="javac"
+        duration="250" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="7" />
+    <task
+        name="verifier"
+        duration="3" />
+
+    <artifact
+        location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+        type="DEX" />
+
+    <build timestamp="247528431934293" >
+        <artifact
+            location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="247974331889920" >
+        <artifact
+            location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="248197783582720" >
+        <artifact
+            location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

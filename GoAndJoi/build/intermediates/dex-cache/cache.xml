@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_e15a37850d151238cbedd12082cfbc0239221b59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudio\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_493283117dfa7ec6314c6e83cbccd3bae4026638\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_3777d771b78e0d4163f8a64faeba6e9fe8645301\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_fa350994800c03a13b1dac32a8c0f284b0114167\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.0.2_e12dd4c1a475c404e89b6967fdbc2d024a135a46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_54ea1b678952201588f1fc51f8f5dbdd01ed6949\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.2_177adbcd46847326acbe933d988d7d6a627e5d5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_3ebbf5310deb0238f69cb7b10410f2c9e470d0a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.0.2_5c2e7b2db36f98513a8996118a13236fc9ff3b61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_81a2bbe6b3ba514636d0e52e39eb1e6955e0f0cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_9b4033f1e3079f45070b97e343abd8af710f8261\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="6a2ce4e22ad19904ee62c8323d833a471a1e3cfa">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d3f4b4e9987eb0e8824cf4c0d1ec8b401fd1bddc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.2_b97e85bb728cb2a87eee4eaf1518ff35f41c314b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="19708e6fedde2ef14d9bc336e12ce11e65da361b">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_62f1cea80e0b8f1b82209c96ca71e888efcdb29a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.2_a5049aa2071d46b3fa8207810484352cc253c676\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_8d62dd9b66afed560164a500a9f786896aa665ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.2_57b249372c129218362146dea48f3821b6a0ba3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.3"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.2_680b94e68420caed7cc9157556cd65c7e8f68419\classes.dex" />
+    </item>
+
+</items>
