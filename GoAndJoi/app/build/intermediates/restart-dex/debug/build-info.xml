@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="23"
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
     density="xhdpi"
     format="7"
-    timestamp="248197783582720"
+    timestamp="1126694023271253"
     token="-6356488105396825287" >
 
     <task
         name="javac"
-        duration="250" />
+        duration="222" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="7" />
+        duration="12" />
     <task
         name="verifier"
-        duration="3" />
+        duration="2" />
 
     <artifact
-        location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+        location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
         type="DEX" />
 
-    <build timestamp="247528431934293" >
+    <build timestamp="1126178292190720" >
+        <artifact
+            location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="1126694023271253" >
         <artifact
             location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="247974331889920" >
-        <artifact
-            location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="248197783582720" >
-        <artifact
-            location="C:\Users\Goldstein\AndroidStudioProjects\GoAndJoi\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
             type="DEX" />
     </build>
 

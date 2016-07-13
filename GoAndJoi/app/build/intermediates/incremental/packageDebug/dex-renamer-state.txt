@@ -1,4 +1,4 @@
-#Tue Jun 21 21:20:05 IDT 2016
+#Wed Jul 13 19:14:51 IDT 2016
 base.0=C\:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d3f4b4e9987eb0e8824cf4c0d1ec8b401fd1bddc
 renamed.1=classes2.dex
 renamed.0=classes.dex
