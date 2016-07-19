@@ -1,12 +1,6 @@
 package com.goldstein.android.goandjoi;
 
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,23 +14,18 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class RVAdapter extends RecyclerView.Adapter<ItemViewHolder> {
+public class RVAdapter extends RecyclerView.Adapter<ItemViewHolder>  {
 
     public static String currentLocation;
 
-    private List<AtractionModel> mCountryModel;
+    public List<AtractionModel> mCountryModel;
     private Context context;
+    public ItemViewHolder.IMyViewHolderClicks mListener;
 
-    public RVAdapter(List<AtractionModel> mCountryModel) {
+    public RVAdapter(List<AtractionModel> mCountryModel, ItemViewHolder.IMyViewHolderClicks listener) {
         this.mCountryModel = mCountryModel;
-
-       /* Collections.sort(mCountryModel, new Comparator<AtractionModel>() {
-            @Override
-            public int compare(AtractionModel lhs, AtractionModel rhs) {
-                return lhs.getPlaceModel().getName().toLowerCase().compareTo(rhs.getPlaceModel().getName().toLowerCase());
-            }
-        });*/
-
+        Collections.sort(mCountryModel, comparator);
+        mListener = listener;
     }
 
     @Override
@@ -50,9 +39,7 @@ public class RVAdapter extends RecyclerView.Adapter<ItemViewHolder> {
         context = viewGroup.getContext();
         View view = LayoutInflater.from(context).inflate(R.layout.actration_view, viewGroup, false);
 
-        loadLocation();
-
-        return new ItemViewHolder(view);
+        return new ItemViewHolder(view, mListener);
     }
 
     @Override
@@ -65,6 +52,7 @@ public class RVAdapter extends RecyclerView.Adapter<ItemViewHolder> {
         mCountryModel.addAll(countryModels);
         notifyDataSetChanged();
     }
+/*
 
     private final LocationListener mLocationListener = new LocationListener() {
         @Override
@@ -99,22 +87,29 @@ public class RVAdapter extends RecyclerView.Adapter<ItemViewHolder> {
                 && ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, mLocationListener);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, mLocationListener);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 10, mLocationListener);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 10, mLocationListener);
 
     }
+*/
 
+    Comparator comparator = new Comparator<AtractionModel>() {
+        @Override
+        public int compare(AtractionModel lhs, AtractionModel rhs) {
+            return lhs.getPlaceModel().getName().toLowerCase().compareTo(rhs.getPlaceModel().getName().toLowerCase());
+        }
+    };
+/*
     private void makeUseOfNewLocation(Location location)
     {
         currentLocation = location.getLatitude() + ", " + location.getLongitude();
 
-        Collections.sort(mCountryModel, new Comparator<AtractionModel>() {
-            @Override
-            public int compare(AtractionModel lhs, AtractionModel rhs) {
-                int res;
-                return lhs.getPlaceModel().getDuration().compareTo(rhs.getPlaceModel().getDuration().toLowerCase());
-            }
-        });
         notifyDataSetChanged();
+    }*/
+    public void onBtnGoClicked(int position)
+    {
+        AtractionModel atractionModel =  mCountryModel.get(position);
+        atractionModel.getPlaceModel();
+
     }
 }

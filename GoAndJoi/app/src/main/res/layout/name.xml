@@ -8,4 +8,6 @@
     android:background="#63ffffff"
     android:padding="15dp"
     android:gravity="left"
+    android:textStyle="bold"
+    android:textColor="@color/colorBlue"
     />

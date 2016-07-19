@@ -218,7 +218,13 @@ public class LocationsManager {
                 }
             }
 
-            durationTextView.get().setText(duration);
+            try {
+                if(durationTextView != null) {
+                    durationTextView.get().setText(duration);
+                }
+            }
+            catch (Throwable t)
+            {}
 
         }
     }

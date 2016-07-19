@@ -21,6 +21,8 @@
         android:id="@+id/details_go"
         layout="@layout/details_go"
         android:animateLayoutChanges="true"
-        android:visibility="gone"></include>
+        android:visibility="gone"
+        ></include>
+
 
 </LinearLayout>

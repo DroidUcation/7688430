@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Accessibility: "
-        android:textSize="@dimen/small_text_size"
+    <ImageView
+        android:layout_width="@dimen/ic_size"
+        android:layout_height="@dimen/ic_size"
+        android:src="@drawable/disabled_sign"
         android:gravity="left"
+
         />
+    <!--android:text="Accessibility: "
+    android:textSize="@dimen/smaller_text_size"
+    android:textColor="@color/colorBlue"-->
     <TextView
     android:id="@+id/attraction_accessibility"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="time"
-    android:textSize="@dimen/small_text_size"
+    android:textSize="@dimen/smaller_text_size"
+        android:textColor="@color/colorBlue"
     android:gravity="left"/>
 </LinearLayout>

@@ -12,6 +12,9 @@ public class PlaceModel {
     String description;
     private String duration;
     private String location;
+    private boolean myPlace = false;
+    private String date;
+
     public PlaceModel(String name, String description, String location, String duration)
     {
         this.name = name;
@@ -46,4 +49,21 @@ public class PlaceModel {
         return location;
     }
 
+    public void setMyPlace(boolean myPlace)
+    {
+        this.myPlace = myPlace;
+    }
+    public boolean getMyPlace()
+    {
+        return myPlace;
+    }
+
+    public void setDate(String date)
+    {
+        this.date = date;
+    }
+    public String getDate()
+    {
+        return date;
+    }
 }

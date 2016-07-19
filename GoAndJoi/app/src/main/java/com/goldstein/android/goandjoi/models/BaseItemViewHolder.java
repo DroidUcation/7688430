@@ -19,10 +19,12 @@ import java.util.ArrayList;
 public class BaseItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     private Context context;
-private String destLocation;
+    private String destLocation;
     public TextView name_TextView;
     public TextView description_TextView;
     public TextView location_TextView;
+    private Button go_Button;
+
     public BaseItemViewHolder(View itemView) {
         super(itemView);
         context = itemView.getContext();
@@ -31,34 +33,34 @@ private String destLocation;
 /*
         View name_des_location = itemView.findViewById(R.id.name_des_location);
         View name_des = name_des_location.findViewById(R.id.name_description);*/
-        name_TextView = (TextView) itemView.findViewById(R.id.country_name);
-        description_TextView = (TextView) itemView.findViewById(R.id.country_iso);
+        name_TextView = (TextView) itemView.findViewById(R.id.name);
+        description_TextView = (TextView) itemView.findViewById(R.id.des);
         location_TextView = (TextView) itemView.findViewById(R.id.location);
 
-        Button button = (Button) itemView.findViewById(R.id.btn_go);
-        button.setOnClickListener(this);
+        go_Button = (Button) itemView.findViewById(R.id.btn_go);
+        go_Button.setOnClickListener(this);
     }
     public void bind(PlaceModel placeModel) {
         name_TextView.setText(placeModel.getName());
         description_TextView.setText(placeModel.getDescription());
-        location_TextView.setText(String.valueOf(placeModel.getDuration()));
 
-       if(RVAdapter.currentLocation != null && RVAdapter.currentLocation != "") {
-            String[] srcLoc = RVAdapter.currentLocation.split(",");
-            LatLng src = new LatLng(Double.parseDouble(srcLoc[0]), Double.parseDouble(srcLoc[1]));
+            location_TextView.setText(String.valueOf(placeModel.getDuration()));
+            if (RVAdapter.currentLocation != null && RVAdapter.currentLocation != "") {
+                String[] srcLoc = RVAdapter.currentLocation.split(",");
+                LatLng src = new LatLng(Double.parseDouble(srcLoc[0]), Double.parseDouble(srcLoc[1]));
             /*if (destLocation == null || destLocation.equals(""))
             {
                 destLocation = atractionModel.getPlaceModel().getLocation();
             }*/
-            destLocation = placeModel.getLocation();
-            String[] dstLoc = destLocation.split(",");
-            LatLng dest = new LatLng(Double.parseDouble(dstLoc[0]), Double.parseDouble(dstLoc[1]));
-            //LatLng dest = new LatLng(31.7767234, 35.2366972);
-            LatLng dest1 = new LatLng(31.8162935, 35.1934127);
-            LocationsManager locationsManager = new LocationsManager();
-            locationsManager.setDuration(src, dest, location_TextView);
+                destLocation = placeModel.getLocation();
+                String[] dstLoc = destLocation.split(",");
+                LatLng dest = new LatLng(Double.parseDouble(dstLoc[0]), Double.parseDouble(dstLoc[1]));
+                //LatLng dest = new LatLng(31.7767234, 35.2366972);
+                LatLng dest1 = new LatLng(31.8162935, 35.1934127);
+                LocationsManager locationsManager = new LocationsManager();
+                locationsManager.setDuration(src, dest, location_TextView);
+
         }
-		placeModel.setDuration(location_TextView.getText().toString());
 
 
     }

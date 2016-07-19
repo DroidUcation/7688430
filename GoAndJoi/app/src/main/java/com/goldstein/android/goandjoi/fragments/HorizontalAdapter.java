@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.goldstein.android.goandjoi.R;
+import com.goldstein.android.goandjoi.RecyclingImageView;
 
 import java.util.List;
 
@@ -53,13 +54,20 @@ public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.My
     @Override
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         //holder.txtView.setText(horizontalList.get(position));
-        //holder.imageView.setImageDrawable(ContextCompat.getDrawable(holder.context,Integer.getInteger(horizontalList.get(position) )));
+        //holder.imageView.setImageDrawable(ContextCompat.getDrawable(holder.context,R.drawable.img_0807_1));//Integer.getInteger(horizontalList.get(position))));
         //holder.imageView.setImageDrawable(ContextCompat.getDrawable(holder.context, R.drawable.img_0807_1));
-       Uri imgPath = Uri.parse("android.resource://com.goldstein.android.goandjoi/"+horizontalList.get(position));
-        Glide.with(holder.imageView.getContext()).load(imgPath)
-                .dontAnimate()
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .into(holder.imageView);
+        if(horizontalList.get(position) != null) {
+
+            int resID = holder.context.getResources().getIdentifier(horizontalList.get(position),
+                    "drawable", "com.goldstein.android.goandjoi");
+            Uri imgPath;
+                  imgPath = Uri.parse("android.resource://com.goldstein.android.goandjoi/" + resID);
+            Glide.with(holder.imageView.getContext()).load(imgPath)
+                    .dontAnimate()
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .error(R.drawable.img_1)
+                    .into(holder.imageView);
+        }
     }
 
     @Override

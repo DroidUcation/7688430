@@ -1,11 +1,31 @@
 [
     {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_tab_attraction.png",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\drawable-mdpi\\ic_tab_attraction.png"
+    },
+    {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_my_place.png",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\drawable-mdpi\\ic_my_place.png"
+    },
+    {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_tab_favourite.png",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\drawable-mdpi\\ic_tab_favourite.png"
     },
     {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_tab_hiking.png",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\drawable-mdpi\\ic_tab_hiking.png"
+    },
+    {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_tab_contacts.png",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\drawable-mdpi\\ic_tab_contacts.png"
+    },
+    {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_tab_petrol_station.png",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\drawable-mdpi\\ic_tab_petrol_station.png"
+    },
+    {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_tab_shopping_center.png",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\drawable-mdpi\\ic_tab_shopping_center.png"
     },
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_tab_call.png",

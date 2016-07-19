@@ -8,7 +8,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
+import android.support.annotation.IntDef;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
+
+import java.util.Date;
 
 
 /**
@@ -17,21 +21,29 @@ import android.support.annotation.Nullable;
 public class PrivateContentProvider extends ContentProvider {
 
     static final String PROVIDER_NAME = "com.goldstein.android.goandjoi";
-    static final String PLACE_URI = "content://" + PROVIDER_NAME + "/"+GoAndJoyInfoContract.PlacesEntry.TABLE_NAME;
-    static final String EXTENDED_PLACES_URI = "content://" + PROVIDER_NAME + "/"+GoAndJoyInfoContract.ExtendedPlacesEntry.TABLE_NAME;
-    static final String USER_TRIP_URI = "content://" + PROVIDER_NAME + "/"+GoAndJoyInfoContract.UserTripEntry.TABLE_NAME;
+    static final String PLACE_URI = "content://" + PROVIDER_NAME + "/" + GoAndJoyInfoContract.PlacesEntry.TABLE_NAME;
+    static final String EXTENDED_PLACES_URI = "content://" + PROVIDER_NAME + "/" + GoAndJoyInfoContract.ExtendedPlacesEntry.TABLE_NAME;
+    static final String USER_TRIP_URI = "content://" + PROVIDER_NAME + "/" + GoAndJoyInfoContract.UserTripEntry.TABLE_NAME;
     static final String IAMGES_URI = "content://" + PROVIDER_NAME + "/" + GoAndJoyInfoContract.ImageEntry.TABLE_NAME;
+
+
+    static final Uri CONTENT_PLACE_URI = Uri.parse(PLACE_URI);
     static final Uri CONTENT_URI = Uri.parse(EXTENDED_PLACES_URI);
+
     static final String USER_URI = "content://" + PROVIDER_NAME + "/"+GoAndJoyInfoContract.UsersEntry.TABLE_NAME;
     static final int PLACES = 1;
     static final int EXTENDED_PLACES = 2;
     static final int USER_TRIP = 3;
     static final int USERS = 4;
     static final int IMAGES = 5;
+    static final int SHOPPING_CENTERS = 6;
+    static final int GAS_STATIONS = 7;
     static final UriMatcher uriMatcher;
     static{
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
         uriMatcher.addURI(PROVIDER_NAME, GoAndJoyInfoContract.PlacesEntry.TABLE_NAME, PLACES);
+        // uriMatcher.addURI(PROVIDER_NAME, GoAndJoyInfoContract.PlacesEntry.TABLE_NAME, SHOPPING_CENTERS);
+        //uriMatcher.addURI(PROVIDER_NAME, GoAndJoyInfoContract.PlacesEntry.TABLE_NAME, GAS_STATIONS);
         uriMatcher.addURI(PROVIDER_NAME, GoAndJoyInfoContract.ExtendedPlacesEntry.TABLE_NAME, EXTENDED_PLACES);
         uriMatcher.addURI(PROVIDER_NAME, GoAndJoyInfoContract.ImageEntry.TABLE_NAME, IMAGES);
         uriMatcher.addURI(PROVIDER_NAME, "flowers/#", USERS);
@@ -60,7 +72,6 @@ public class PrivateContentProvider extends ContentProvider {
         switch (uriMatcher.match(uri)) {
             case PLACES:
                 qb.setTables(GoAndJoyInfoContract.PlacesEntry.TABLE_NAME);
-               // qb.setProjectionMap();
                 break;
             case EXTENDED_PLACES:
                 qb.setTables(
@@ -75,23 +86,9 @@ public class PrivateContentProvider extends ContentProvider {
                                 "ON p."+
                                     GoAndJoyInfoContract.PlacesEntry.COLUMN_ID + " = img."+
                                     GoAndJoyInfoContract.ImageEntry.COLUMN_PLACE_ID );
-               /* projection = new String[]{"t1.att1", "t2.att2"};
-                selection = "t1.att1=? AND t2.att2=?";
-                selectionArgs = new String[]{"value1","value2"};*/
                 break;
             case IMAGES:
                 qb.setTables(GoAndJoyInfoContract.ImageEntry.TABLE_NAME);
-
-                        /*+ " ep INNER JOIN "+
-                        GoAndJoyInfoContract.PlacesEntry.TABLE_NAME+" p ON ep."+
-                        GoAndJoyInfoContract.ImageEntry.COLUMN_PLACE_ID+
-                        " = p."+GoAndJoyInfoContract.PlacesEntry.COLUMN_ID)*/
-
-          /*  case FLOWERS_ID:
-                qb.setTables(FLOWERS_TABLE_NAME);
-                qb.appendWhere( _ID + "=" + uri.getPathSegments().get(1));
-                break;
-*/
             default:
                 throw new IllegalArgumentException("Unknown URI " + uri);
         }
@@ -103,31 +100,6 @@ public class PrivateContentProvider extends ContentProvider {
          */
         c.setNotificationUri(getContext().getContentResolver(), uri);
         return c;
-
-       /* Cursor retCursor;
-        SQLiteQueryBuilder sqLiteQueryBuilder = new SQLiteQueryBuilder();
-        sqLiteQueryBuilder.setTables(GoAndJoyInfoContract.PlacesEntry.TABLE_NAME);
-        retCursor =sqLiteQueryBuilder.query(sqLiteDatabase, projection, selection, selectionArgs,
-                null, null, null);*/
-
-       /* switch (sUriMatcher.match(uri)) {
-
-            case 100: {
-                retCursor = sqlHelper.getReadableDatabase().query(
-                        GoAndJoyInfoContract.UsersEntry.TABLE_NAME,
-                        projection,
-                        selection,
-                        selectionArgs,
-                        null,
-                        null,
-                        sortOrder
-                );
-                break;
-            }
-
-            default:
-                throw new UnsupportedOperationException("Unknown uri: " + uri);
-        }*/
     }
 
     @Nullable
@@ -150,6 +122,20 @@ public class PrivateContentProvider extends ContentProvider {
 
     @Override
     public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
-        return 0;
+        int count = 0;
+
+        switch (uriMatcher.match(uri)){
+            case PLACES:
+                values = new ContentValues();
+                values.put(GoAndJoyInfoContract.PlacesEntry.CULUMN_MY_PLACE, "1");
+                values.put(GoAndJoyInfoContract.PlacesEntry.COLUMN_DATE, new Date().getTime());
+
+                count = sqLiteDatabase.update(GoAndJoyInfoContract.PlacesEntry.TABLE_NAME, values, selection, selectionArgs);
+                break;
+            default:
+                throw new IllegalArgumentException("Unknown URI " + uri );
+        }
+        getContext().getContentResolver().notifyChange(uri, null);
+        return count;
     }
 }

@@ -21,5 +21,5 @@
         <item name="colorPrimaryDark">@color/colorBlue</item>
         <item name="colorAccent">@color/colorRed</item>
     </style>
-
+<style name="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem."></style>
 </resources>

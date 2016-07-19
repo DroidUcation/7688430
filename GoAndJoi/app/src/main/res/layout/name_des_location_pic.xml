@@ -4,13 +4,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="left">
+    android:animateLayoutChanges="true"
+
+    >
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/horizontal_recycler_view"
-        android:background="#fff"
+            android:id="@+id/horizontal_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        />
 
     <include
         android:id="@+id/country_name"
@@ -26,15 +29,42 @@
         layout="@layout/description"
         android:layout_below="@id/horizontal_recycler_view"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        >
+        android:layout_width="250dp"        >
     </include>
+
+   <!-- <TextView
+        android:id="@+id/tree_dotes_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/country_iso"
+        android:layout_alignBottom="@+id/country_iso"
+        android:text="[...]"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/colorBlue"/>
+-->
     <include
         android:id="@+id/location"
         layout="@layout/location"
         android:layout_below="@id/horizontal_recycler_view"
+        android:layout_alignRight="@id/country_iso"
+        android:layout_alignParentRight="true"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_gravity="right"
         >
     </include>
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_recycler_view"
+        android:layout_alignRight="@id/country_iso"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:text="time"
+        android:textSize="@dimen/smaller_text_size"
+        android:layout_gravity="right"
+        android:textColor="@color/colorBlue"
+        android:gravity="center"/>
 </RelativeLayout>

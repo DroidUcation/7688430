@@ -23,8 +23,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class PlaceAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
-    private List<PlaceModel> mPlaceModel;
-public static String currentLocation;
+    public List<PlaceModel> mPlaceModel;
+    public static String currentLocation;
     private Context context;
 
     public PlaceAdapter(List<PlaceModel> mPlaceModel) {
@@ -43,7 +43,7 @@ public static String currentLocation;
         context = viewGroup.getContext();
         View view = LayoutInflater.from(context).inflate(R.layout.vw_place, viewGroup, false);
 
-        loadLocation();
+        //loadLocation();
 
         return new BaseItemViewHolder(view);
     }
@@ -59,7 +59,24 @@ public static String currentLocation;
         notifyDataSetChanged();
     }
 
-    private final LocationListener mLocationListener = new LocationListener() {
+    public void sortNotifyDataSetChanged()
+    {
+        if (mPlaceModel!= null ) {
+            Collections.sort(mPlaceModel, new Comparator<PlaceModel>() {
+                @Override
+                public int compare(PlaceModel lhs, PlaceModel rhs) {
+                    if(lhs.getDuration().trim() == ""|| rhs.getDuration().trim() == "")
+                        return 0;
+                    int lDuration = Integer.getInteger(lhs.getDuration().split(" ")[0]);
+                    int rDuration = Integer.getInteger(rhs.getDuration().split(" ")[0]);
+                    return lDuration - rDuration;
+                }
+            });
+        }
+        notifyDataSetChanged();
+    }
+
+/*    private final LocationListener mLocationListener = new LocationListener() {
         @Override
         public void onLocationChanged(final Location location) {
             //your code here
@@ -97,14 +114,15 @@ public static String currentLocation;
     }
     private void makeUseOfNewLocation(Location location) {
        currentLocation = location.getLatitude() + ", " + location.getLongitude();
-
+*//*
         Collections.sort(mPlaceModel, new Comparator<PlaceModel>() {
             @Override
             public int compare(PlaceModel lhs, PlaceModel rhs) {
-                int res;
-                return lhs.getDuration().compareTo(rhs.getDuration().toLowerCase());
+                int lDuration = Integer.getInteger(lhs.getDuration().split(" ")[0]);
+                int rDuration = Integer.getInteger(rhs.getDuration().split(" ")[0]);
+                return lDuration-rDuration;
             }
-        });
+        });*//*
         notifyDataSetChanged();
-    }
+    }*/
 }

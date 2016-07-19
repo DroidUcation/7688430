@@ -284,10 +284,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.sign_out_menu) {
+        /*if (id == R.id.sign_out_menu) {
             logout();
             return true;
-        }
+        }*/
         return super.onOptionsItemSelected(item);
     }
 

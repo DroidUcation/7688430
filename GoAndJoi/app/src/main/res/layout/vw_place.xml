@@ -5,19 +5,33 @@
     android:gravity="left">
     <include
         android:id="@+id/name"
-        layout="@layout/name" />
-    <include
-        android:id="@+id/des"
-        layout="@layout/description" >
-    </include>
-    <include
-        android:id="@+id/location"
-        layout="@layout/location" >
-    </include>
+        layout="@layout/name2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/des"
+            layout="@layout/description2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true" >
 
+        </include>
+
+        <include
+            android:id="@+id/location"
+            layout="@layout/location2"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </include>
+    </RelativeLayout>
     <include
 
         android:id="@+id/btn_go"
-        layout="@layout/btn_go" >
+        layout="@layout/btn_go2" >
     </include>
 </LinearLayout>

@@ -14,8 +14,11 @@ public class GoAndJoyInfoContract {
     static final String IAMGES_URI = "content://" + PROVIDER_NAME + "/" + GoAndJoyInfoContract.ImageEntry.TABLE_NAME;
     static final String USER_TRIP_URI = "content://" + PROVIDER_NAME + "/" + GoAndJoyInfoContract.UserTripEntry.TABLE_NAME;
     static final String USER_URI = "content://" + PROVIDER_NAME + "/" + GoAndJoyInfoContract.UsersEntry.TABLE_NAME;
+
     public static final Uri CONTENT_URI = Uri.parse(EXTENDED_PLACES_URI);
     public static final Uri CONTENT_PLACE_URI = Uri.parse(PLACE_URI);
+    public static final Uri UPDATE_PLACE_URI = Uri.parse(EXTENDED_PLACES_URI);
+
     public static final String CREATE_USER_TABLE = "CREATE TABLE " + UsersEntry.TABLE_NAME + " (" +
             UsersEntry.COLUMN_ID + " INTEGER PRIMARY KEY, " +
             UsersEntry.COLUMN_NAME + "  TEXT, " +
@@ -31,8 +34,10 @@ public class GoAndJoyInfoContract {
             PlacesEntry.COLUMN_HEBREW_NAME +" TEXT, " +
             PlacesEntry.COLUMN_ENGLISH_DESCRIPTION +" TEXT, " +
             PlacesEntry.COLUMN_HEBREW_DESCRIPTION +" TEXT, " +
-            PlacesEntry.COLUMN_CATEGORY_TYPE +" TEXT, " +
-            PlacesEntry.COLUMN_LOCATION +"  TEXT " +
+            PlacesEntry.COLUMN_CATEGORY_TYPE +" INTEGER, " +
+            PlacesEntry.COLUMN_LOCATION +"  TEXT, " +
+            PlacesEntry.CULUMN_MY_PLACE +"  INTEGER, " +
+            PlacesEntry.COLUMN_DATE +"  DATE " +
             ")";
 
     public static final String CREATE_EXTENDED_PLACES_TABLE = "CREATE TABLE "+ ExtendedPlacesEntry.TABLE_NAME +" (" +
@@ -86,6 +91,8 @@ public class GoAndJoyInfoContract {
         public static final String COLUMN_HEBREW_DESCRIPTION = "hebrew_description";
         public static final String COLUMN_CATEGORY_TYPE = "category_type";
         public static final String COLUMN_LOCATION = "location";
+        public static final String CULUMN_MY_PLACE = "my_place";
+        public static final String COLUMN_DATE = "date";
     }
 
     public static class ExtendedPlacesEntry implements BaseColumns

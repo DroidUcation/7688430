@@ -16,16 +16,16 @@
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
-        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.0\\res\\layout\\place_autocomplete_item_prediction.xml"
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_menu_item_action_area.xml"
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.0\\res\\layout\\place_autocomplete_item_prediction.xml"
     },
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_in.xml",
@@ -44,6 +44,10 @@
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\description2.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\description2.xml"
+    },
+    {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\name2.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\name2.xml"
     },
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -70,6 +78,10 @@
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vw_attraction_accessibility.xml",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\vw_attraction_accessibility.xml"
+    },
+    {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btn_go2.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\btn_go2.xml"
     },
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
@@ -110,6 +122,10 @@
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\location2.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\location2.xml"
     },
     {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_seven.xml",
@@ -240,6 +256,10 @@
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\fragment_list.xml"
     },
     {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vw_gas_station.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\vw_gas_station.xml"
+    },
+    {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_expanded_menu_layout.xml"
     },
@@ -324,11 +344,11 @@
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_ten.xml",
         "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\src\\main\\res\\layout\\fragment_ten.xml"
+    },
+    {
+        "merged": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Goldstein\\AndroidStudioProjects\\GoAndJoi\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_activity_chooser_view.xml"
     }
 ]

@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trip Level: "
-        android:textSize="@dimen/small_text_size"
+        android:text="Diffculty Level: "
+        android:textSize="@dimen/smaller_text_size"
         android:gravity="left"
+        android:textColor="@color/colorBlue"
+        />-->
+    <ImageView
+        android:layout_width="@dimen/ic_size"
+        android:layout_height="@dimen/ic_size"
+        android:src="@drawable/levels"
+        android:gravity="left"
+
         />
     <TextView
         android:id="@+id/attraction_trip_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="time"
-        android:textSize="@dimen/small_text_size"
+        android:textSize="@dimen/smaller_text_size"
+        android:textColor="@color/colorBlue"
         android:gravity="left"/>
 </LinearLayout>
